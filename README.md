@@ -12,4 +12,4 @@ yarn test
 
 ## Post sobre o código
 
-Vejo o post sobre TDD e testes na prática <a href="https://www.devjuniorplus.com.br/aprendendo-sobre-testes-e-tdd/" target="_black" rel="noopener noreferrer">aqui</a>.
+Vejo o post sobre TDD e testes na prática <a href="https://www.devjuniorplus.com.br/aprendendo-sobre-testes-e-tdd/" target="_blank" rel="noopener noreferrer">aqui</a>.
