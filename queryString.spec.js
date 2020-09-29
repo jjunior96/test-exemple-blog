@@ -43,4 +43,21 @@ describe('Query string to object', () => {
       profession: "developer",
     });
   });
+
+  it('should convert a query string of a single key-value to object', () => {
+    const qs = 'name=Fabio';
+
+    expect(parse(qs)).toEqual({
+      name: "Fabio",
+    });
+  });
+
+  it('should convert a query string to an object taking', () => {
+    const qs = 'name=Fabio&abilities=JS,TDD';
+
+    expect(parse(qs)).toEqual({
+      name: "Fabio",
+      abilities: ['JS', 'TDD'],
+    });
+  });
 });

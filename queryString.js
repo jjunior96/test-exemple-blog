@@ -17,7 +17,13 @@ module.exports.queryString = obj =>
 module.exports.parse = string =>  
 Object.fromEntries(
   string.split('&').map(item => {
-    return item.split('=');
+    const parts = item.split('=');
+
+    if(parts[1].indexOf(',') > -1) {
+      parts[1] = parts[1].split(',');
+    }
+
+    return parts;
   }),
 );
   
