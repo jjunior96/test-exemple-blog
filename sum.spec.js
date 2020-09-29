@@ -1,4 +1,4 @@
-const { sum } = require('./sum');
+import { sum } from './sum';
 
 it('should sum 5 and 5 the result must be 10', () => {
   expect(sum(5, 5)).toBe(10);
