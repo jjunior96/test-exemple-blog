@@ -17,13 +17,13 @@ module.exports.queryString = obj =>
 module.exports.parse = string =>  
 Object.fromEntries(
   string.split('&').map(item => {
-    const parts = item.split('=');
+    let [key, value] = item.split('=');
 
-    if(parts[1].indexOf(',') > -1) {
-      parts[1] = parts[1].split(',');
+    if(value.indexOf(',') > -1) {
+      value = value.split(',');
     }
 
-    return parts;
+    return [key, value];
   }),
 );
   
