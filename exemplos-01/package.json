@@ -7,6 +7,7 @@
     "test": "jest",
     "test:multiply": "jest -i multiply.spec.js",
     "test:sum": "jest -i sum.spec.js",
+    "test:division": "jest -i division.spec.js",
     "test:queryString": "jest -i queryString.spec.js"
   },
   "devDependencies": {
