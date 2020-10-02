@@ -13,3 +13,11 @@ it('should trow an error if the second params is 0', () => {
     division(2, 0)
   }).toThrowError();
 });
+
+describe('not a NaN', () => {
+  it('should throw an error if what is provided to the method cannot be division', () => {
+    expect(() => {
+      division('', 2)
+    }).toThrowError();
+  });
+});
