@@ -8,12 +8,21 @@
     "test:multiply": "jest -i multiply.spec.js",
     "test:sum": "jest -i sum.spec.js",
     "test:division": "jest -i division.spec.js",
-    "test:queryString": "jest -i queryString.spec.js"
+    "test:queryString": "jest -i queryString.spec.js",
+    "test:concepts": "jest -i concepts.spec.js",
+    "test:server": "jest -i api-example/__tests__/server.spec.js",
+    "test:user": "jest -i api-example/__tests__/user.spec.js"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
+    "@types/jest": "^26.0.14",
     "babel-jest": "^26.3.0",
-    "jest": "^26.4.2"
+    "fast-safe-stringify": "^2.0.7",
+    "jest": "^26.4.2",
+    "supertest": "^5.0.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }

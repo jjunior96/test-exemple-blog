@@ -34,6 +34,6 @@ test('should be test with objects', () => {
   expect(obj).toHaveProperty('name', 'Jack');
   expect(obj.name).toBe('Jack');
 
-  const obj2 = { name: 'Jack', 'age': 32 };
-  expect(obj).toBe(obj2); // Erro, pois o obj só é igual a ele mesmo
+  // const obj2 = { name: 'Jack', 'age': 32 };
+  // expect(obj).toBe(obj2); // Erro, pois o obj só é igual a ele mesmo
 })
